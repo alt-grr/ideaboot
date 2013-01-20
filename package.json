@@ -1,0 +1,23 @@
+{
+    "name": "ideaboot",
+    "version": "0.1.0",
+    "description": "A simple script to bootstrap an intelliJ-Project out of a folder",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "bin": {
+        "ideaboot": "./bin/ideaboot"
+    },
+    "repository": "",
+    "keywords": [
+        "intellij",
+        "idea"
+    ],
+    "dependencies": {
+        "optimist": "0.3.5"
+    },
+    "author": "Frank Hildebrandt <frank@fhildebrandt.de>",
+    "license": "BSD",
+    "readmeFilename": "README.md"
+}
