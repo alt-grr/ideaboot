@@ -1,11 +1,11 @@
 var fs = require('fs');
 
-var file = '<?xml version="1.0" encoding="UTF-8"?>' +
-    '<project version="4">' +
-    '<component name="JavaScriptLibraryMappings">' +
-    '<file url="PROJECT" libraries="{Node.js v0.8.16 Core Modules}" />' +
-    '<includedPredefinedLibrary name="Node.js Globals" />' +
-    '</component>' +
+var file = '<?xml version="1.0" encoding="UTF-8"?>\n' +
+    '<project version="4">\n' +
+    '<component name="JavaScriptLibraryMappings">\n' +
+    '<file url="PROJECT" libraries="{Node.js v0.8.16 Core Modules}" />\n' +
+    '<includedPredefinedLibrary name="Node.js Globals" />\n' +
+    '</component>\n' +
     '</project>';
 
 exports.save = function () {
