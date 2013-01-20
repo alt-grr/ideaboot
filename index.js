@@ -6,7 +6,7 @@
 
 var iml = require('./src/ImlCreator.js'),
     mod = require('./src/ModuleCreator.js'),
-    lib = require('./src/ImlCreator.js');
+    lib = require('./src/LibraryCreator.js');
 
 var arg = require('optimist').argv;
 
@@ -16,7 +16,7 @@ if (arg._[0] == "init") {
 
         iml.save(projectname);
         mod.save(projectname);
-        lib.save(projectname);
+        lib.save();
 
     } else {
         console.log("A projectname is required");

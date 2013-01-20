@@ -12,7 +12,7 @@ var file = '<?xml version="1.0" encoding="UTF-8"?>'
     '</component>'
     '</module>';
 
-exports.save = function (c) {
+exports.save = function (projectName) {
     exports.writeFile(projectName);
 }
 
