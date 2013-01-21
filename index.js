@@ -4,21 +4,19 @@
  *
  */
 
-var iml = require('./src/ImlCreator.js'),
-    mod = require('./src/ModuleCreator.js'),
-    lib = require('./src/LibraryCreator.js');
+var func = require('./src/Functions.js');
 
-var arg = require('optimist').argv;
+var arg = require('optimist')
+    .options(["force"])
+    .usage(func.documentation())
+    .argv;
 
-if (arg._[0] == "init") {
-    if (arg._[1]) {
-        var projectname = arg._[1];
-        iml.save(projectname);
-        mod.save(projectname);
-        lib.save();
-
-    } else {
-        console.log("A projectname is required");
-    }
+switch (arg._[0]) {
+    case "init":
+        func.init(arg);
+        break;
+    case "remove":
+        break;
+    default:
+        console.log(func.documentation());
 }
-
